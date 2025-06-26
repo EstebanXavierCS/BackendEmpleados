@@ -26,7 +26,7 @@ app.use(
     })
 )
 
-app.use(cors());
+app.use(cors({ origin: "https://empleadosfront.netlify.app"}));
 app.use('/api', empleadoRutas);
 
 //Habilitamos el puerto 
